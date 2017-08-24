@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<link rel="icon" href="png/wink.png" type="image/png" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+		<link rel="stylesheet" href="css/dhtmlxslider.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<link href="css/dashboard.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="js/dhtmlxslider.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/wink.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a id="winkResult"></a>
+							<span class="nav-icon glyphicon glyphicon-refresh" aria-hidden="true" alt="Refresh" onclick="fetchDevices()"></span>
+
+							<span id="groups" class="nav-icon glyphicon glyphicon-th" aria-hidden="true" alt="Groups"></span>
+
+							<span id="devices" class="nav-icon glyphicon glyphicon-th-list" aria-hidden="true" alt="Devices"></span>
+
+							<span id="shortcuts" class="nav-icon glyphicon glyphicon-star" aria-hidden="true" alt="Shortcuts"></span>
+
+							<span id="robots" class="nav-icon glyphicon glyphicon-cog" aria-hidden="true" alt="Robots"></span>
+
+							<a href="" id="weather">
+								<span class="nav-icon glyphicon glyphicon-cloud" aria-hidden="true" alt="Weather"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row" id="groupsContainer">
+				<div class="col-sm-12 main">
+					<div class="row panel panel-default">
+						<div class="panel-heading">Groups</div>
+						<div class="table-responsive">
+							<table class="table table-striped" id="winkGroupsTable">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Description</th>
+										<th>Switch</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody id="winkGroups">
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="devicesContainer">
+				<div class="col-sm-12 main">
+					<div class="row panel panel-default">
+						<div class="panel-heading">Devices</div>
+						<div class="table-responsive">
+							<table class="table table-striped" id="winkDevicesTable">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Description</th>
+										<th>Switch</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody id="winkDevices">
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="shortcutsContainer">
+				<div class="col-sm-12 main">
+					<div class="row panel panel-default">
+						<div class="panel-heading">Shortcuts</div>
+						<div class="table-responsive">
+							<table class="table table-striped" id="winkShortcutsTable">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Description</th>
+										<th>Switch</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody id="winkShortcuts">
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="robotsContainer">
+				<div class="col-sm-12 main">
+					<div class="row panel panel-default">
+						<div class="panel-heading">Robots</div>
+						<div class="table-responsive">
+							<table class="table table-striped" id="winkRobotsTable">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Description</th>
+										<th></th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody id="winkRobots">
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

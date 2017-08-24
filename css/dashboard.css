@@ -1,0 +1,147 @@
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	padding-top: 50px;
+	background-color: #383838;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar-fixed-top {
+	border: 0;
+}
+
+.main {
+	padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+	.main {
+		padding: 5px 40px;
+	}
+}
+
+.table-responsive {
+	border: 1px solid #e8e9eb;
+}
+
+.navbar {
+	min-height: 50px;
+	max-height: 50px;
+	margin-bottom: 20px;
+}
+
+.navbar .container-fluid .navbar-brand {
+	margin-left: 30px;
+}
+
+.navbar-brand>img {
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	display: inline;
+	width: 50px;
+}
+
+.nav .nav-icon {
+	color: #fff;
+	display: inline-block;
+	font-size: 25px;
+	margin: 12px;
+	cursor: pointer;
+}
+
+.nav .nav-icon:hover {
+	color: #00b9f1;
+	transition: ease all 0.5s;
+}
+
+#weather {
+	display: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#winkResult {
+	display: inline-block;
+}
+
+.panel-default {
+	border-color: #777;
+	margin-bottom: 0px;
+}
+
+.panel-default .panel-heading {
+	background-color: #00F186;
+	background-image: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: -6px;
+}
+
+.dhtmlxslider_dhx_web .dhxsl_runner {
+	background-color: #00B8F1;
+	border: 1px solid #00b8f1;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: -14px !important;
+}
+
+.dhtmlxslider_dhx_web .dhxsl_container {
+	float: none;
+}
+
+.table-striped thead tr {
+	background-color: #e8e9eb;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+	background-color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: #edf9ff;
+}
+
+td[id*='Desc'] div {
+	line-height: 40px;
+}
+
+th, td {
+	padding: 5px;
+}
+
+title {
+	padding-top: 5px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.prompt_dialog {
+	position: fixed;
+	left: 50%;
+	top: 15%;
+	margin-left: -150px;
+	padding: 15px;
+	width: 300px;
+	border: 1px solid black;
+	background-color: #e8e9eb;
+}
+
+.prompt_dialog label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.prompt_dialog input {
+	margin-bottom: 10px;
+	width: 270px;
+}
