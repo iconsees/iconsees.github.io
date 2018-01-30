@@ -885,8 +885,8 @@ function doLogin() {
 		dataType: "json",
 		async: true,
 		crossDomain: true,
-		data: { client_id: "quirky_wink_android_app",
-				client_secret: "e749124ad386a5a35c0ab554a4f2c045",
+		data: { //client_id: "quirky_wink_android_app",
+				//client_secret: "e749124ad386a5a35c0ab554a4f2c045",
 				username: wink_username,
 				password: wink_password,
 				grant_type: "password"
