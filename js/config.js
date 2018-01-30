@@ -1,5 +1,5 @@
 /* WINK CREDENTIALS */
-var wink_username = "luiscd7@gmail.com";
+var wink_username = "";
 var wink_password = "";
 
 /* USE WITH WEATHER */
