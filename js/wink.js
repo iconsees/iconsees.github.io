@@ -889,7 +889,7 @@ function doLogin() {
 				//client_secret: "e749124ad386a5a35c0ab554a4f2c045",
 				username: wink_username,
 				password: wink_password,
-				grant_type: "password"
+				//grant_type: "password"
 		}
 	})
 	.done(function(result) {
